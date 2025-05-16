@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=/home2/" />
   <title>Redirecting...</title>
+  <link rel="icon" href="/favicon.ico" />
+  <script>
+    // Redirect only if path is root exactly (no trailing slash)
+    if (window.location.pathname === "/") {
+      window.location.replace("/home2/");
+    }
+  </script>
 </head>
 <body>
+  <p>Redirecting to Home2... Agar nahi hua to <a href="/home2/">yahan click karein</a>.</p>
 </body>
 </html>
