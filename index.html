@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <title>Redirecting to Buffstreams Home</title>
   <link rel="icon" href="/favicon.ico" />
   <script>
-    // Redirect only if path is root exactly (no trailing slash)
-    if (window.location.pathname === "/") {
+    // Redirect only if on root path
+    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
       window.location.replace("/home2/");
     }
   </script>
 </head>
 <body>
-  <p>Redirecting to Home2... Agar nahi hua to <a href="/home2/">yahan click karein</a>.</p>
+  <p>Redirecting to Buffstreams Home... If you're not redirected, <a href="/home2/">click here</a>.</p>
 </body>
 </html>
